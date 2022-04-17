@@ -2,9 +2,9 @@
 print("What is your E-Mail adress? ")
 email = input()
 #slice out user name
-user = email[:email.index("@")]
+user = email[:email.find("@")]
 #slice domain name
-domain = email[email.index("@") + 1:]
+domain = email[email.find("@") + 1:]
 #format message
 output = f"Your username is {user} and your domainname is {domain}."
 #display output message
